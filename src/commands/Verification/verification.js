@@ -195,8 +195,8 @@ async function handleSetup(interaction, guild, client) {
             name: "emoji_6",
             id: "1570013778593058938",
             animated: true
-    })
-    );
+    }));
+         verifyEmbed.setImage("https://cdn.discordapp.com/attachments/1569772959864725654/1570112924926742578/IMG_1828.png?ex=6af5e91c&is=6af4979c&hm=b99d1c0544e6a6007f717c1b4b29e4ef39687f4c0810872824a217c3ca388ad0&](https://cdn.discordapp.com/attachments/1569772959864725654/1570112924926742578/IMG_1828.png?ex=6af5e91c\&is=6af4979c\&hm=b99d1c0544e6a6007f717c1b4b29e4ef39687f4c0810872824a217c3ca388ad0&");
 
     const verifyMessage = await verificationChannel.send({
         embeds: [verifyEmbed],
