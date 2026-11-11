@@ -52,12 +52,7 @@ export default {
                         content: messageContent || welcomeMessage
                     });
                 } else {
-                    const embed = new EmbedBuilder()
-                        .setColor(welcomeConfig.welcomeEmbed?.color || getColor('success'))
-                        .setTitle(embedTitle)
-                        .setDescription(welcomeMessage)
-                        .setThumbnail(user.displayAvatarURL())
-                    const embed = new EmbedBuilder()
+                const embed = new EmbedBuilder()
                         .setColor(welcomeConfig.welcomeEmbed?.color || getColor('success'))
                         .setTitle(embedTitle)
                         .setDescription(welcomeMessage)
