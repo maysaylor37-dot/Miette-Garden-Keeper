@@ -57,11 +57,14 @@ export default {
                         .setTitle(embedTitle)
                         .setDescription(welcomeMessage)
                         .setThumbnail(user.displayAvatarURL())
-                        .addFields(
-                           { name: 'User', value: `${user.tag} (${user.id})`, inline: true }
-                        )
+                    const embed = new EmbedBuilder()
+                        .setColor(welcomeConfig.welcomeEmbed?.color || getColor('success'))
+                        .setTitle(embedTitle)
+                        .setDescription(welcomeMessage)
+                        .setThumbnail(user.displayAvatarURL())
                         .setTimestamp()
                         .setFooter({ text: embedFooter });
+
                     
                     if (welcomeConfig.welcomeImage) {
                         embed.setImage(welcomeConfig.welcomeImage);
