@@ -190,8 +190,12 @@ async function handleSetup(interaction, guild, client) {
         new ButtonBuilder()
             .setCustomId("verify_user")
             .setLabel(buttonText)
-            .setStyle(ButtonStyle.Success)
-            .setEmoji("✅")
+            .setStyle(ButtonStyle.Secondary)
+            .setEmoji({
+            name: "emoji_6",
+            id: "1570013778593058938",
+            animated: true
+    })
     );
 
     const verifyMessage = await verificationChannel.send({
