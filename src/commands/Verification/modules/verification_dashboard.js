@@ -159,6 +159,7 @@ async function repostVerificationPanel(guild, cfg) {
     const verifyEmbed = new EmbedBuilder()
         .setTitle('Server Verification')
         .setDescription(cfg.message || botConfig.verification.defaultMessage)
+        .setImage("https://cdn.discordapp.com/attachments/1569772959864725654/1570112924926742578/IMG_1828.png?ex=6af5e91c&is=6af4979c&hm=b99d1c0544e6a6007f717c1b4b29e4ef39687f4c0810872824a217c3ca388ad0&](https://cdn.discordapp.com/attachments/1569772959864725654/1570112924926742578/IMG_1828.png?ex=6af5e91c\&is=6af4979c\&hm=b99d1c0544e6a6007f717c1b4b29e4ef39687f4c0810872824a217c3ca388ad0&")
         .setColor(getColor('success'));
 
     const verifyButton = new ActionRowBuilder().addComponents(
